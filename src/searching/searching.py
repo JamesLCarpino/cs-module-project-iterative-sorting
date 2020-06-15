@@ -4,11 +4,10 @@ def linear_search(arr, target):
     # target needsto equal arr[i] ...or arr at a certain index.
     # loop over the arr, checking each item, if true for a target == return the arr[item]
     # if it isn't equal, keep searching for the length of the array.
-    for i in arr:
-        if target == arr[i]:
-            return 1
-        else:
-            arr[i] += 1
+
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
 
     return -1  # not found
 
