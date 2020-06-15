@@ -14,6 +14,14 @@ def linear_search(arr, target):
 
 # Write an iterative implementation of Binary Search
 def binary_search(arr, target):
+    # what is a binary search?
+    # a search that uses sorted elements by ignoring half
+    # ie: if its > go to the right if its < go to the left
+    # if x matches the middle return the mid index
+    # if the taret is less than the item go to the left.
+    # elif the target is greater than the item go to the right.
+    # ^ complete this each time you need to to have it narrow down the search until it finds the item.
+    # else return target.
 
     # Your code here
 
