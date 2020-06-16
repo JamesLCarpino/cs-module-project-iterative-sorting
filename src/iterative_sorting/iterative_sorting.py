@@ -5,12 +5,24 @@ def selection_sort(arr):
         cur_index = i
         smallest_index = cur_index
         # TO-DO: find next smallest element
-        #
+        # if next item in loop is < cur_i set it to the prev of the cur index
+        # if next item in loop is > cur_index set it to thenext of the current index
+        # else return the index
         # (hint, can do in 3 loc)
-        # Your code here
 
+        # if i < cur_index:
+        #     #move that shit to the right of the current index, but how.
+        # if i > cur_index:
+        #     #move that shit to the left of the current index
+        # else:
+        #     #give me back the list of the sorted array
+        # Your code here
+        for j in range(i + 1, len(arr)):
+            if arr[cur_index] > arr[j]:
+                cur_index = j
         # TO-DO: swap
         # Your code here
+        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
 
     return arr
 

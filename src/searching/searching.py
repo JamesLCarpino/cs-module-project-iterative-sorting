@@ -24,5 +24,20 @@ def binary_search(arr, target):
     # else return target.
 
     # Your code here
+    # set the high and low of the target.
+    low = 0
+    high = len(arr) - 1
 
-    return -1  # not found
+    while low <= high:
+        mid = (
+            high + low
+        ) // 2  # this finds the mid point between the high end and low end.
+        if arr[mid] < target:
+            low = mid + 1
+        elif arr[mid] > target:
+            high = mid - 1
+        else:
+            return mid
+    else:
+
+        return -1  # not found
